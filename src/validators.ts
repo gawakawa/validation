@@ -1,11 +1,11 @@
 import type { Validator } from "./core.ts";
 
-export const required: Validator<string> = {
-  validate: (v) => !!v.trim(),
-  message: "Required",
+export const required: Validator = {
+  validate: (v) => typeof v === "string" && !!v.trim(),
+  error: "Required",
 };
 
-export const minLength = (min: number): Validator<string> => ({
-  validate: (v) => v.length >= min,
-  message: `Min ${min} chars`,
+export const minLength = (min: number): Validator => ({
+  validate: (v) => typeof v === "string" && v.length >= min,
+  error: `Min ${min} chars`,
 });
