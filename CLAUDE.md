@@ -1,10 +1,12 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working with
+code in this repository.
 
 ## Project Overview
 
-A TypeScript library for form validation using JavaScript Proxy. Uses Deno as the runtime.
+A TypeScript library for form validation using JavaScript Proxy. Uses Deno as
+the runtime.
 
 ## Development Commands
 
